@@ -1,0 +1,32 @@
+<html>
+    <head>
+    </head>
+<body>
+    <label>First name :</label>
+    <h3 id="fn"></h3>
+    <label>Last name :</label>
+    <h3 id="ln"></h3>
+    <label>Date of birth :</label>
+    <h3 id="date"></h3>
+    <label>Gender :</label>
+    <h3 id="gender"></h3>
+    <label>Phone number :</label>
+    <h3 id="phone"></h3>
+    <label>E-mail :</label>
+    <h3 id="email"></h3>
+</body>
+<script>
+
+    document.querySelector('#fn').textContent = localStorage.getItem('f');
+    
+    document.querySelector('#ln').textContent = localStorage.getItem('l');
+    
+    document.querySelector('#date').textContent = localStorage.getItem('d');
+    
+    document.querySelector('#gender').textContent = localStorage.getItem('g');
+
+    document.querySelector('#phone').textContent = localStorage.getItem('p');
+
+    document.querySelector('#email').textContent = localStorage.getItem('e');
+</script>
+</html>
